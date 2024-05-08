@@ -1,0 +1,14 @@
+compile:
+	g++ MultCau.cpp -o causal
+	g++ MultNoncau.cpp -o noncausal 
+
+causal:
+	g++ MultCau.cpp -o causal
+
+noncausal:
+	g++ MultNoncau.cpp -o noncausal 
+
+
+clean:
+	rm -rf noncausal causal
+
